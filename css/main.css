@@ -1,0 +1,39 @@
+div {
+    padding: 10px;
+}
+a { 
+    color: #2459ac; 
+    border-bottom: 1px solid #2459ac; 
+    text-decoration: none; 
+}
+a:hover {
+    color: #e63220; 
+    border-bottom: 1px solid #f3cac6; 
+}
+body { 
+    font: 1em/1.4 Georgia,serif;
+    background: #fff; 
+    color: #000; 
+    padding: 1em 5%; 
+    margin: 0;
+}
+.about {
+    width: 50%;
+    text-align: justify;
+}
+.interests {
+    width: 45%;
+    text-align: justify;
+}
+a.image {
+    border-bottom: none; 
+    padding-left: 20px; 
+    background-repeat: no-repeat; 
+    background-position: 0 0; 
+}
+a.image span {
+    border-bottom: 1px solid #c9d9f3;
+}
+a.image:hover span {
+    border-bottom: 1px solid #f3cac6;
+}
