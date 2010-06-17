@@ -18,7 +18,7 @@ body {
     margin: 0;
 }
 .about {
-    text-shadow: rgba(0, 0, 0, 0.0976562) 2px 2px;
+    /* text-shadow: rgba(0, 0, 0, 0.0976562) 2px 2px; */
     width: 50%;
     text-align: justify;
     /* -webkit-transform: rotate(2deg); */
