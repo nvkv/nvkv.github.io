@@ -1,6 +1,7 @@
 div {
     padding: 10px;
 }
+
 a { 
     color: #2459ac; 
     border-bottom: 1px solid #2459ac; 
@@ -14,17 +15,17 @@ body {
     font: 1em/1.4 Georgia,serif;
     background: #fff; 
     color: #000; 
-    padding: 1em 5%; 
+    padding: 1em 5%;
     margin: 0;
 }
 .about {
     /* text-shadow: rgba(0, 0, 0, 0.0976562) 2px 2px; */
-    width: 50%;
+    /* width: 50%; */
     text-align: justify;
     /* -webkit-transform: rotate(2deg); */
 }
 .interests {
-    width: 45%;
+    /* width: 45%; */
     text-align: justify;
 }
 a.image {
@@ -55,4 +56,28 @@ a.image:hover span {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
     width: 99%;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#left-page {
+    width: 50%;
+    float:left;
+}
+
+#right-page {
+    width: 40%;
+    height: 500px;
+    float:right;
+    padding:25px;
+    border-left: 1px;
+    border-left-color: #000;
+    border-left-style: solid;
+}
+
+#feeble-excuse {
+    text-align: justify;
 }
