@@ -4,8 +4,8 @@ div {
 
 a { 
     color: #2459ac; 
-    border-bottom: 1px solid #2459ac; 
-    text-decoration: none; 
+    /* border-bottom: 1px solid #2459ac;  */
+    text-decoration: none;
 }
 a:hover {
     color: #e63220; 
@@ -77,4 +77,21 @@ a.image:hover span {
 }
 #feeble-excuse {
     text-align: justify;
+}
+.vignette {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: circle;
+}
+ol {
+    list-style-type: lower-greek;
+}
+.folding {
+    color: #2459ac; 
+    /* border-bottom: 1px solid #2459ac;  */
+    text-decoration: none;
+    cursor: pointer;
 }
