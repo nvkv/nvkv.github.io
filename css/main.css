@@ -95,3 +95,8 @@ ol {
     text-decoration: none;
     cursor: pointer;
 }
+
+.folding:hover {
+    color: #e63220; 
+    border-bottom: 1px solid #f3cac6; 
+}
