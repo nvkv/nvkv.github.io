@@ -89,13 +89,13 @@ ul {
 ol {
     list-style-type: lower-greek;
 }
-.folding {
+.folding, .fake_link {
     color: #2459ac; 
     /* border-bottom: 1px solid #2459ac;  */
     text-decoration: none;
     cursor: pointer;
 }
-.folding:hover {
+.folding:hover, .fake_link:hover {
     color: #e63220; 
     border-bottom: 1px solid #f3cac6; 
 }
