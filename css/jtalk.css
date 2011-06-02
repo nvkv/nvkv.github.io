@@ -126,7 +126,7 @@ body.jtalkBody {
 .jtalkTool textarea {
     border: 1px solid;
     border-color: #a8a8a8;
-    font-family: Arial, Helvetica, sans;
+    font-family: Monaco, Courier, sans;
     line-height: 1.2em;
     font-size: 13px;
     position: relative;
