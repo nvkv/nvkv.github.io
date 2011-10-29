@@ -113,10 +113,11 @@ fn: function (aDocument){
 var self=this;
 self['@profiles']=smalltalk.send(aDocument, "_rows", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23profiles"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23profiles"), "_asJQuery", []), "_fadeIn", []);
 return self;},
 args: ["aDocument"],
-source: unescape('documentReceived%3A%20aDocument%0A%09%22Handle%20async%20documents%20collection%20loading%22%0A%09profiles%20%3A%3D%20aDocument%20rows.%0A%09self%20appendToJQuery%3A%20%28%27%23profiles%27%20asJQuery%29.'),
-messageSends: ["rows", "appendToJQuery:", "asJQuery"],
+source: unescape('documentReceived%3A%20aDocument%0A%09%22Handle%20async%20documents%20collection%20loading%22%0A%09profiles%20%3A%3D%20aDocument%20rows.%0A%09self%20appendToJQuery%3A%20%28%27%23profiles%27%20asJQuery%29.%0A%09%28%27%23profiles%27%20asJQuery%29%20fadeIn.'),
+messageSends: ["rows", "appendToJQuery:", "asJQuery", "fadeIn"],
 referencedClasses: []
 }),
 smalltalk.SPProfiles);
@@ -185,10 +186,12 @@ var self=this;
 self['@content']=document;
 smalltalk.send(self, "_clean", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23about_me"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23content"), "_asJQuery", []), "_fadeIn", []);
+smalltalk.send(smalltalk.send(unescape("%23about_me"), "_asJQuery", []), "_fadeIn", []);
 return self;},
 args: ["document"],
-source: unescape('documentReceived%3A%20document%0A%09content%20%3A%3D%20document.%0A%09self%20clean.%0A%09self%20appendToJQuery%3A%20%28%27%23about_me%27%20asJQuery%29.'),
-messageSends: ["clean", "appendToJQuery:", "asJQuery"],
+source: unescape('documentReceived%3A%20document%0A%09content%20%3A%3D%20document.%0A%09self%20clean.%0A%09self%20appendToJQuery%3A%20%28%27%23about_me%27%20asJQuery%29.%0A%09%28%27%23content%27%20asJQuery%29%20fadeIn.%0A%09%28%27%23about_me%27%20asJQuery%29%20fadeIn.'),
+messageSends: ["clean", "appendToJQuery:", "asJQuery", "fadeIn"],
 referencedClasses: []
 }),
 smalltalk.SPContent);
@@ -239,10 +242,11 @@ fn: function (articlesList){
 var self=this;
 self['@articles']=smalltalk.send(articlesList, "_rows", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23articles"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23articles"), "_asJQuery", []), "_fadeIn", []);
 return self;},
 args: ["articlesList"],
-source: unescape('documentReceived%3A%20articlesList%0A%09articles%20%3A%3D%20articlesList%20rows.%0A%09self%20appendToJQuery%3A%20%28%27%23articles%27%20asJQuery%29.'),
-messageSends: ["rows", "appendToJQuery:", "asJQuery"],
+source: unescape('documentReceived%3A%20articlesList%0A%09articles%20%3A%3D%20articlesList%20rows.%0A%09self%20appendToJQuery%3A%20%28%27%23articles%27%20asJQuery%29.%0A%09%28%27%23articles%27%20asJQuery%29%20fadeIn.'),
+messageSends: ["rows", "appendToJQuery:", "asJQuery", "fadeIn"],
 referencedClasses: []
 }),
 smalltalk.SPArticles);

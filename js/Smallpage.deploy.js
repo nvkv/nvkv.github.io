@@ -81,6 +81,7 @@ fn: function (aDocument){
 var self=this;
 self['@profiles']=smalltalk.send(aDocument, "_rows", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23profiles"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23profiles"), "_asJQuery", []), "_fadeIn", []);
 return self;}
 }),
 smalltalk.SPProfiles);
@@ -133,6 +134,8 @@ var self=this;
 self['@content']=document;
 smalltalk.send(self, "_clean", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23about_me"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23content"), "_asJQuery", []), "_fadeIn", []);
+smalltalk.send(smalltalk.send(unescape("%23about_me"), "_asJQuery", []), "_fadeIn", []);
 return self;}
 }),
 smalltalk.SPContent);
@@ -172,6 +175,7 @@ fn: function (articlesList){
 var self=this;
 self['@articles']=smalltalk.send(articlesList, "_rows", []);
 smalltalk.send(self, "_appendToJQuery_", [smalltalk.send(unescape("%23articles"), "_asJQuery", [])]);
+smalltalk.send(smalltalk.send(unescape("%23articles"), "_asJQuery", []), "_fadeIn", []);
 return self;}
 }),
 smalltalk.SPArticles);

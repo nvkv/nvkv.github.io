@@ -54,6 +54,7 @@ documentReceived: aDocument
 	"Handle async documents collection loading"
 	profiles := aDocument rows.
 	self appendToJQuery: ('#profiles' asJQuery).
+	('#profiles' asJQuery) fadeIn.
 ! !
 
 !SPProfiles methodsFor: 'initialization'!
@@ -98,6 +99,8 @@ documentReceived: document
 	content := document.
 	self clean.
 	self appendToJQuery: ('#about_me' asJQuery).
+	('#content' asJQuery) fadeIn.
+	('#about_me' asJQuery) fadeIn.
 !
 
 requestAboutMe
@@ -127,6 +130,7 @@ Widget subclass: #SPArticles
 documentReceived: articlesList
 	articles := articlesList rows.
 	self appendToJQuery: ('#articles' asJQuery).
+	('#articles' asJQuery) fadeIn.
 !
 
 requestArticles
