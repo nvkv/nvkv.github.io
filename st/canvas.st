@@ -1,3 +1,4 @@
+Smalltalk current createPackage: 'Canvas' properties: #{}!
 Object subclass: #HTMLCanvas
 	instanceVariableNames: 'root'
 	category: 'Canvas'!
@@ -12,17 +13,21 @@ root
     ^root
 ! !
 
-!HTMLCanvas methodsFor: 'initialization'!
-
-initialize
-    super initialize.
-    root := TagBrush fromString: 'div' canvas: self
-! !
-
 !HTMLCanvas methodsFor: 'adding'!
 
 with: anObject
     ^self root with: anObject
+! !
+
+!HTMLCanvas methodsFor: 'initialization'!
+
+initialize
+    super initialize.
+    root ifNil: [root := TagBrush fromString: 'div' canvas: self]
+!
+
+initializeFromJQuery: aJQuery
+    root := TagBrush fromJQuery: aJQuery canvas: self
 ! !
 
 !HTMLCanvas methodsFor: 'tags'!
@@ -129,33 +134,121 @@ textarea
 
 a
     ^self tag: 'a'
+!
+
+canvas
+	^self tag: 'canvas'
+!
+
+pre
+    ^self tag: 'pre'
+!
+
+code
+    ^self tag: 'code'
+!
+
+br
+    ^self tag: 'br'
+!
+
+script
+    ^self tag: 'script'
+!
+
+link
+    ^self tag: 'link'
+!
+
+style
+	^self tag: 'style'
+!
+
+p: anObject
+    ^self p with: anObject
+!
+
+h1: anObject
+    ^self h1 with: anObject
+!
+
+iframe
+    ^self tag: 'iframe'
+!
+
+iframe: aString
+    ^self iframe src: aString
+!
+
+h2: anObject
+    ^ self h2 with: anObject
+!
+
+h3: anObject
+    ^self h3 with: anObject
+!
+
+h4: anObject
+    ^self h4 with: anObject
+!
+
+h5: anObject
+    ^self h5 with: anObject
+!
+
+h6: anObject
+    ^self h6 with: anObject
+!
+
+img: aString
+    ^self img src: aString
+!
+
+ol: anObject
+    ^self ol with: anObject
+!
+
+li: anObject
+    ^self li with: anObject
+!
+
+ul: anObject
+    ^self ul with: anObject
+!
+
+span: anObject
+    ^self span with: anObject
+!
+
+style: aString
+	^ self style with: aString; yourself
 ! !
 
+!HTMLCanvas class methodsFor: 'instance creation'!
 
-!HTMLCanvas methodsFor: '*JQuery'!
-
-appendToJQuery: aJQuery
-    aJQuery appendElement: root element
+onJQuery: aJQuery
+	^self basicNew
+		initializeFromJQuery: aJQuery;
+		initialize;
+		yourself
 ! !
-
 
 Object subclass: #TagBrush
-	instanceVariableNames: 'element'
+	instanceVariableNames: 'canvas element'
 	category: 'Canvas'!
 
-!TagBrush class methodsFor: 'instance creation'!
+!TagBrush methodsFor: 'accessing'!
 
-fromString: aString canvas: aCanvas
-    ^self new
-	initializeFromString: aString canvas: aCanvas;
-	yourself
+element
+    ^element
 ! !
 
 !TagBrush methodsFor: 'adding'!
 
 contents: anObject
-    self asJQuery empty.
-    self append: anObject
+    self 
+	empty;
+   	append: anObject
 !
 
 addBrush: aTagBrush
@@ -184,21 +277,31 @@ appendBlock: aBlock
 !
 
 appendChild: anElement
-    {'self[''@element''].appendChild(anElement)'}
+	"In IE7 and IE8 appendChild fails on several node types. So we need to check" 
+ 	<var element=self['@element'];
+ 	if (null == element.canHaveChildren || element.canHaveChildren) {
+		element.appendChild(anElement);
+ 	} else {
+ 		element.text = String(element.text) +  anElement.innerHTML;
+ 	} >
 !
 
 appendString: aString
     self appendChild: (self createTextNodeFor: aString)
+!
+
+empty
+	self asJQuery empty
 ! !
 
 !TagBrush methodsFor: 'attributes'!
 
 at: aString put: aValue
-    {'self[''@element''].setAttribute(aString, aValue)'}
+    <self['@element'].setAttribute(aString, aValue)>
 !
 
 removeAt: aString
-    {'self[''@element''].removeAttribute(aString)'}
+    <self['@element'].removeAttribute(aString)>
 !
 
 class: aString
@@ -223,6 +326,66 @@ title: aString
 
 style: aString
     self at: 'style' put: aString
+!
+
+type: aString
+    self at: 'type' put: aString
+!
+
+media: aString
+    self at: 'media' put: aString
+!
+
+rel: aString
+    self  at: 'rel' put: aString
+!
+
+width: aString
+    self  at: 'width' put: aString
+!
+
+height: aString
+    self  at: 'height' put: aString
+!
+
+value: aString
+    self  at: 'value' put: aString
+! !
+
+!TagBrush methodsFor: 'converting'!
+
+asJQuery
+    ^window jQuery: self element
+! !
+
+!TagBrush methodsFor: 'events'!
+
+onKeyDown: aBlock
+    self asJQuery bind: 'keydown' do: aBlock
+!
+
+onKeyPress: aBlock
+    self asJQuery bind: 'keypress' do: aBlock
+!
+
+onKeyUp: aBlock
+    self asJQuery bind: 'keyup' do: aBlock
+!
+
+onFocus: aBlock
+    self asJQuery bind: 'focus' do: aBlock
+!
+
+onBlur: aBlock
+    self asJQuery bind: 'blur' do: aBlock
+!
+
+onChange: aBlock
+    self asJQuery bind: 'change' do: aBlock
+!
+
+onClick: aBlock
+    self asJQuery bind: 'click' do: aBlock
 ! !
 
 !TagBrush methodsFor: 'initialization'!
@@ -230,75 +393,40 @@ style: aString
 initializeFromString: aString canvas: aCanvas
     element := self createElementFor: aString.
     canvas := aCanvas
-! !
-
-!TagBrush methodsFor: 'accessing'!
-
-element
-    ^element
-! !
-
-!TagBrush methodsFor: 'converting'!
-
-asJQuery
-    ^{'return smalltalk.JQuery._from_(jQuery(self[''@element'']))'}
 !
 
-asJQueryDo: aBlock
-    aBlock value: self asJQuery
-! !
-
-!TagBrush methodsFor: 'events'!
-
-onKeyDown: aBlock
-    self asJQuery on: 'keydown' do: aBlock
-!
-
-onKeyPress: aBlock
-    self asJQuery on: 'keypress' do: aBlock
-!
-
-onKeyUp: aBlock
-    self asJQuery on: 'keyup' do: aBlock
-!
-
-onFocus: aBlock
-    self asJQuery on: 'focus' do: aBlock
-!
-
-onBlur: aBlock
-    self asJQuery on: 'blur' do: aBlock
-!
-
-onChange: aBlock
-    self asJQuery on: 'change' do: aBlock
-!
-
-onClick: aBlock
-    self asJQuery on: 'click' do: aBlock
+initializeFromJQuery: aJQuery canvas: aCanvas
+    element := aJQuery get: 0.
+    canvas := aCanvas
 ! !
 
 !TagBrush methodsFor: 'private'!
 
 createElementFor: aString
-    ^{'return document.createElement(String(aString))'}
+	<return document.createElement(String(aString))>
 !
 
 createTextNodeFor: aString
-    ^{'return document.createTextNode(String(aString))'}
+	<return document.createTextNode(String(aString))>
 ! !
 
+!TagBrush class methodsFor: 'instance creation'!
 
+fromString: aString canvas: aCanvas
+    ^self new
+	initializeFromString: aString canvas: aCanvas;
+	yourself
+!
+
+fromJQuery: aJQuery canvas: aCanvas
+    ^self new
+	initializeFromJQuery: aJQuery canvas: aCanvas;
+	yourself
+! !
 
 Object subclass: #Widget
-	instanceVariableNames: 'root'
+	instanceVariableNames: ''
 	category: 'Canvas'!
-
-!Widget methodsFor: 'accessing'!
-
-root
-    ^root
-! !
 
 !Widget methodsFor: 'adding'!
 
@@ -307,80 +435,46 @@ appendToBrush: aTagBrush
 !
 
 appendToJQuery: aJQuery
-    self render.
-    aJQuery append: self root asJQuery
-! !
-
-!Widget methodsFor: 'actions'!
-
-alert: aString
-    {'alert(aString)'}
-!
-
-confirm: aString
-    ^{'return window.confirm(aString)'}
-!
-
-prompt: aString
-    ^self prompt: aString default: ''
-!
-
-prompt: aString default: anotherString
-    ^{'return window.prompt(aString, anotherString)'}
-!
-
-update
-    | canvas |
-    canvas := HTMLCanvas new.
-    canvas root: self root.
-    self root asJQuery empty.
-    self renderOn: canvas
+   self renderOn: (HTMLCanvas onJQuery: aJQuery)
 ! !
 
 !Widget methodsFor: 'rendering'!
-
-render
-    | canvas |
-    canvas := HTMLCanvas new.
-    root := canvas root.
-    self renderOn: canvas
-!
 
 renderOn: html
     self
 ! !
 
-Widget subclass: #Counter
-	instanceVariableNames: 'count'
-	category: 'Canvas'!
+!Object methodsFor: '*Canvas'!
 
-!Counter methodsFor: 'initialization'!
-
-initialize
-    super initialize.
-    count := 0
-! !
-
-!Counter methodsFor: 'rendering'!
-
-renderOn: html
-    html h1 with: count asString.
-    html button
-	with: '++';
-	onClick: [self increase].
-    html button
-	with: '--';
-	onClick: [self decrease]
-! !
-
-!Counter methodsFor: 'actions'!
-
-increase
-    count := count + 1.
-    self update
+appendToJQuery: aJQuery
+    aJQuery append: self asString
 !
 
-decrease
-    count := count - 1.
-    self update
+appendToBrush: aTagBrush
+    aTagBrush append: self asString
 ! !
+
+!BlockClosure methodsFor: '*Canvas'!
+
+appendToJQuery: aJQuery
+    self value: (HTMLCanvas onJQuery: aJQuery)
+!
+
+appendToBrush: aTagBrush
+    aTagBrush appendBlock: self
+! !
+
+!String methodsFor: '*Canvas'!
+
+asJQuery
+    <return jQuery(String(self))>
+!
+
+appendToJQuery: aJQuery
+    aJQuery append: self
+!
+
+appendToBrush: aTagBrush
+    aTagBrush appendString: self
+! !
+

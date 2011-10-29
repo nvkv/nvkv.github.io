@@ -1,18 +1,31 @@
-<!-- <?xml version="1.0" encoding="utf-8"?> -->
 <!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sёmka Novikov. Homepage.</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/> 
+<html> 
+  <head> 
+    <title>Sёmka Novikov</title> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="author" content="Sёmka Novikov" /> 
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
+    <script type='text/javascript' src='js/amber.js'></script> 
+    <script type="text/javascript">
+      loadAmber({
+        files: ['Smallpage.js'],
+        prefix: 'js',
+        ready: function() {
+          smalltalk.SPProfiles._new();
+          smalltalk.SPContent._new()._requestAboutMe();
+          smalltalk.SPArticles._new()._requestArticles();
+        }}); 
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="alternate" type="application/rss+xml" title="Semka Novikov bglo feed" href="http://sdfgh153.livejournal.com/data/rss" /> 
-
     <link rel="openid.server" href="http://www.myopenid.com/server" />
     <link rel="openid.delegate" href="http://sdfgh153.myopenid.com/" />
     <link rel="openid2.local_id"  href="http://sdfgh153.myopenid.com" />
     <link rel="openid2.provider"  href="http://www.myopenid.com/server" />
-    <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sdfgh153.myopenid.com" />
 
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sdfgh153.myopenid.com" />
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -23,83 +36,23 @@
       pageTracker._trackPageview();
     </script>
     <meta name="keywords" content="Semka, Semka Novikov, Сёмка, Novikov, Шмодрильник, Schmodrilnique, sdfgh153, λf·(λx·f (x x)) (λx·f (x x)) вёдрами"/> 
-
-    <!-- jQuery dependencies -->
-    <script type='text/javascript' src='js/jquery-1.4.4.min.js'></script>
-    <script type='text/javascript' src='js/jquery-ui-1.8.9.custom.min.js'></script>
-    <script type='text/javascript' src='js/jquery.textarea.js'></script>
-
-    <!-- Jtalk -->
-    <script type='text/javascript' src='js/boot.js'></script>
-    <script type='text/javascript' src='js/Kernel.js'></script>
-    <script type='text/javascript' src='js/JQuery.js'></script>
-    <script type='text/javascript' src='js/Canvas.js'></script>
-    <script type='text/javascript' src='js/Parser.js'></script>
-    <script type='text/javascript' src='js/Compiler.js'></script>
-    <script type='text/javascript' src='js/IDE.js'></script>
-    <!-- Be sure to add init.js at the end -->
-    <script type='text/javascript' src='js/init.js'></script>
-
-    <script type="text/javascript" src="js/effects.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/jtalk.css"/>
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="left-page">
-	<div class="about">
-	  Меня зовут Семён Новиков.<br/>
-	  Со мной можно связаться так: <a href="mailto:semka.novikov@gmail.com">semka.novikov@gmail.com</a>, это почта, GoogleTalk и FaceTime.<br/>
-	</div>
-	<div class="links">
-	  Еще у меня есть:
-	  <ul>
-	    <li><a class="image" href="http://facebook.com/semka.novikov" style="background-image:url(i/facebook.gif);">Профиль на фейсбуке</a></li>
-	    <li><a class="image" href="http://log.sdfgh153.ru/" style="background-image:url(i/livejournal.gif);">Блог</a></li>
-	    <li><a class="image" href="http://www.last.fm/user/sdfgh153" style="background-image:url(i/lastfm.png);">Музыкальный вкус</a></li>
-	    <li><a class="image" href="http://sdfgh153.moikrug.ru" style="background-image:url(i/moikrug.gif);">Резюме</a></li>
-	    <li><a class="image" href="http://github.com/semka/" style="background-image:url(i/github.png);">Код</a></li>
-	    <li><a class="image" href="http://www.dragongoserver.net/userinfo.php?uid=54408" style="background-image:url(i/dgs.png);">Аккаунт на DGS</a></li>
-	  </ul>
-	</div>
-	<div class="interests">
-	  Я работаю в небольшой но гордой конторе <a href="http://nulana.com">Nulana</a> где разрабатываю софт для Mac OS X и iOS.
-	  Люблю математику, жену и академическую музыку. Очень медленно думаю и правда не знаю, что значит мой ник.
-	</div>
-	<div class="misc">
-	  Всякое:
-	  <ul>
-	    <li><a href="ssh-key.html">ssh public key</a></li>
-	    <li><a href="gpg-key.html">gpg public key</a></li>      
-	  </ul>
-	</div>
+  </head> 
+  <body> 
+    <div id="container">
+      <div id="profiles" class="shadow">
+        <span id="class-browser">
+          <img src="./images/amber_browser.png" onClick="smalltalk.Browser._open()">
+        </span>
       </div>
-      <div id="right-page">
-	<div id="feeble-excuse">
-	  <h3>Плохая отговорка</h3>
-	  <p>Знаете, иногда мне начинает казаться, что я хочу писать статьи на разные темы. Но потом я сплю и всё проходит.
-	  Впрочем вы всегда можете почитать, что пишут умные люди по интересующим меня темам в <a href="http://fprog.ru/planet/">R&lambda;P</a> и <a href="http://sdfgh153.ru/theologyplanet/">Богословской планете</a>.</p>
-	  <p class="vignette">♱</p>
-	</div>
-	<div id="my-articles">
-	  А вот, что бывает, когда мне не спится:
-	  <ol>
-	    <li id="oop-articles-url">
-	      <span class="folding">Smalltalk/Io/OOP</span>
-	      <div id="oop-articles" style="display: none">
-		<ul style="margin-left: -30px;">
-		  <li><a href="http://habrahabr.ru/blogs/crazydev/28041/">Io programming language</a></li>
-		  <li><a href="http://habrahabr.ru/blogs/crazydev/28167/">Io Language: Синтаксис</a></li>
-		  <li><a href="http://habrahabr.ru/blogs/crazydev/28254/">Io Language: Объектная система</a></li>
-		  <li><a href="http://habrahabr.ru/blogs/crazydev/50873/">Io Language: Метапрограммирование</a></li>
-		</ul>
-	      </div>
-	    </li>
-	  </ol>
-        Если вам стало скучно, то прямо на этой странице можно <span class="fake_link" onclick="smalltalk.Browser._open();">попрограммировать</span> на <a href="http://jtalk-project.org" target="_blank">Smalltalk</a>. 
-	</div>
+      <div id="content" class="shadow">
+        <div id="about_me"></div>
+        <div id="articles"></div>
       </div>
     </div>
-  </body>
-</html>
-
+    <div id="footer">
+      Powered by<br/>
+      <a href="http://amber-lang.net"><img src="./images/amber.png"/></a>
+      <a href="http://cloudant.com/"><img src="./images/couchdb.png"/></a>
+    </div>
+  </body> 
+</html> 
