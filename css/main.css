@@ -65,7 +65,7 @@ a:hover {
 #content {
     border: 1px solid #e6e6e6;
     background-color: #EEEEEE;
-    width: 40%;
+    width: 36%;
     padding: 20px;
     /* height: 400px; */
     float: right;
@@ -84,7 +84,7 @@ a:hover {
 #footer {
     color: #999999;
     height:50px;
-    margin-top:-100px;
+    /* margin-top:-100px; */
     position:relative;                      
 }
 
