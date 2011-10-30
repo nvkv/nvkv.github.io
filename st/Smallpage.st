@@ -113,7 +113,7 @@ requestAboutMe
 !SPContent methodsFor: 'rendering'!
 
 renderOn: html
-	'#content' asJQuery html: (content text).
+	'#about_me' asJQuery html: (content text).
 !
 
 clean

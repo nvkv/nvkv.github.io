@@ -120,7 +120,7 @@ smalltalk.method({
 selector: 'renderOn:',
 fn: function (html){
 var self=this;
-smalltalk.send(smalltalk.send(unescape("%23content"), "_asJQuery", []), "_html_", [smalltalk.send(self['@content'], "_text", [])]);
+smalltalk.send(smalltalk.send(unescape("%23about_me"), "_asJQuery", []), "_html_", [smalltalk.send(self['@content'], "_text", [])]);
 return self;}
 }),
 smalltalk.SPContent);

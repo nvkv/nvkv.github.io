@@ -167,10 +167,10 @@ selector: unescape('renderOn%3A'),
 category: 'rendering',
 fn: function (html){
 var self=this;
-smalltalk.send(smalltalk.send(unescape("%23content"), "_asJQuery", []), "_html_", [smalltalk.send(self['@content'], "_text", [])]);
+smalltalk.send(smalltalk.send(unescape("%23about_me"), "_asJQuery", []), "_html_", [smalltalk.send(self['@content'], "_text", [])]);
 return self;},
 args: ["html"],
-source: unescape('renderOn%3A%20html%0A%09%27%23content%27%20asJQuery%20html%3A%20%28content%20text%29.'),
+source: unescape('renderOn%3A%20html%0A%09%27%23about_me%27%20asJQuery%20html%3A%20%28content%20text%29.'),
 messageSends: ["html:", "asJQuery", "text"],
 referencedClasses: []
 }),
