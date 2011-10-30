@@ -82,6 +82,8 @@ a:hover {
 }
 
 #footer {
+    font-size: 1em;
+    font-family: 'Miltonian', cursive;
     color: #999999;
     height:50px;
     /* margin-top:-100px; */
