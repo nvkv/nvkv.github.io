@@ -78,7 +78,7 @@ renderOn: html
 			html a href: (each value url); 
                                    with: (html img src: (each value icon))].
           	html p with: [
-                  html with: 'Если Вы по делу, то может быть вам нужно посмотреть моё '.
+                  html with: 'Если Вы по делу, то, может быть, вам нужно посмотреть моё '.
                   html a href: 'http://sdfgh153.moikrug.ru'; with: 'резюме '.
                   html with: 'или '.
                   html a href: 'http://github.com/semka/'; with: 'код.'].

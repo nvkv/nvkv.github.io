@@ -97,7 +97,7 @@ a:hover {
 
 /** Amber */
 #jtalk {
-    height: 450px;
+    height: 400px !important;
 }
 
 #class-browser {
