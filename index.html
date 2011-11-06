@@ -39,13 +39,13 @@
     <script type='text/javascript' src='js/amber.js'></script> 
     <script type="text/javascript">
       loadAmber({
-        files: ['Smallpage.js'],
-        prefix: 'js',
-        ready: function() {
-          smalltalk.SPProfiles._new();
-          smalltalk.SPContent._new()._requestAboutMe();
-          smalltalk.SPArticles._new()._requestArticles();
-        }}); 
+          files: ['Smallpage.js'],
+          prefix: 'js',
+          ready: function() {
+              smalltalk.SPProfiles._new();
+              smalltalk.SPContent._new()._requestAboutMe();
+              smalltalk.SPArticles._new()._requestArticles();
+          }});
     </script>
   </head>
   <body>
