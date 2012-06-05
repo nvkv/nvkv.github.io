@@ -84,7 +84,7 @@ renderOn: html
                   html a href: 'http://github.com/semka/'; with: 'код.'].
         	html	p with: [
                   	html with: 'Я работаю в прекрасной конторе '.
-                  	html a href: 'http://gipis.ru'; with: 'Gipis'. 
+                  	html a href: 'http://gip.is'; with: 'Gipis'. 
                 	html with: ', где пишу софт для iOS. '.
                 	html with: 'Люблю математику, жену и академическую музыку. Очень медленно думаю и правда не знаю, что значит мой ник.']].
 ! !
