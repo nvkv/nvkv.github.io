@@ -1,0 +1,13 @@
+LATEX=pdflatex
+
+cv: 
+	$LATEX cv.tex
+	
+open::cv
+	open cv.pdf
+	
+clean:
+	rm *.log
+
+clear:
+	rm *.pdf *.log
