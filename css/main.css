@@ -12,7 +12,7 @@ p {
 
 a { 
 	color: #61676f;
-	ext-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
