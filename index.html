@@ -1,69 +1,75 @@
 <!DOCTYPE html> 
 <html> 
-  <head> 
-    <title>Sёmka Novikov</title> 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-    <meta name="author" content="Sёmka Novikov" /> 
-    <meta name="keywords" content="Semka, Semka Novikov, Сёмка, Novikov, Шмодрильник, 
-                                   Schmodrilnique, sdfgh153, λf·(λx·f (x x)) (λx·f (x x)) вёдрами"/> 
-
-    <!-- Page style -->
-    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-    <link href="http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic" 
-          rel="stylesheet"
-          type="text/css"/>
-    <link href='http://fonts.googleapis.com/css?family=Miltonian' rel='stylesheet' type='text/css'>
-
-    <!-- OpenID and RSS stuff -->
-    <link rel="alternate" type="application/rss+xml" 
-          title="Semka Novikov bglo feed" 
-          href="http://sdfgh153.livejournal.com/data/rss" /> 
-    <link rel="openid.server" href="http://www.myopenid.com/server" />
-    <link rel="openid.delegate" href="http://sdfgh153.myopenid.com/" />
-    <link rel="openid2.local_id"  href="http://sdfgh153.myopenid.com" />
-    <link rel="openid2.provider"  href="http://www.myopenid.com/server" />
-    <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sdfgh153.myopenid.com" />
-    <!-- Google analytics -->
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      var pageTracker = _gat._getTracker("UA-3723848-1");
-      pageTracker._initData();
-      pageTracker._trackPageview();
-    </script>
-
-    <!-- Amber Smalltalk -->
-    <script type='text/javascript' src='js/amber.js'></script> 
-    <script type="text/javascript">
-      loadAmber({
-          files: ['Smallpage.js'],
-          prefix: 'js',
-          ready: function() {
-              smalltalk.SPProfiles._new();
-              smalltalk.SPContent._new()._requestAboutMe();
-              smalltalk.SPArticles._new()._requestArticles();
-          }});
-    </script>
-  </head>
-  <body>
-    <div id="container">
-      <div id="profiles" class="shadow" style="display:none">
-        <span id="class-browser">
-          <img src="./images/amber_browser.png" onClick="smalltalk.Browser._open()">
-        </span>
-      </div>
-      <div id="content" class="shadow" style="display:none">
-        <div id="about_me" style="display:none"></div>
-        <div id="articles" style="display:none"></div>
-      </div>
-    </div>
-    <div id="footer">
-      Powered by<br/>
-      <a href="http://amber-lang.net"><img src="./images/amber.png"/></a>
-      <a href="http://cloudant.com/"><img src="./images/couchdb.png"/></a>
-    </div>
- </body> 
+	<head> 
+		<title>Sёmka Novikov</title> 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="author" content="Sёmka Novikov" /> 
+		<meta name="keywords" content="Semka, Semka Novikov, Сёмка, Novikov, Шмодрильник, 
+		Schmodrilnique, sdfgh153, λf·(λx·f (x x)) (λx·f (x x)) вёдрами"/> 
+		
+		<!-- Page style -->
+		
+		<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link href="http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic" 
+		rel="stylesheet"
+		ype="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Miltonian' rel='stylesheet' type='text/css'>
+		
+		<!-- OpenID and RSS stuff -->
+		
+		<link rel="alternate" type="application/rss+xml" title="Semka Novikov bglo feed" href="http://sdfgh153.livejournal.com/data/rss" /> 
+		<link rel="openid.server" href="http://www.myopenid.com/server" />
+		<link rel="openid.delegate" href="http://sdfgh153.myopenid.com/" />
+		<link rel="openid2.local_id"  href="http://sdfgh153.myopenid.com" />
+		<link rel="openid2.provider"  href="http://www.myopenid.com/server" />
+		<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sdfgh153.myopenid.com" />
+		
+		<!-- Google analytics -->
+		
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-3723848-1");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</head>
+	
+	<body>
+		<div id="about">
+			<b>Sёmka Novikov</b><br/>
+			<pre>semka.novikov@gmail.com</pre>
+			<p id="occupation">
+				iOS developer at <a href="http://gip.is">Gipis</a><br/>
+				Translation volunteer at <a href="http://youversion.com/about">YouVersion</a>
+			</p>
+			<p id="projects">
+				<b>Projects</b><br/>
+				Open source projects at <a href="https://github.com/semka">GitHub</a><br/>
+			</p>
+			<p id="articles">
+				<b>Articles</b>
+				<ol>
+					<li>
+						<a href="http://habrahabr.ru/blogs/crazydev/50873/">Io Language: Метапрограммирование (ru)</a>
+					</li>
+					<li><a href="http://habrahabr.ru/blogs/crazydev/28254/">Io Language: Объектная система (ru)</a>
+					</li>
+					<li>
+						<a href="http://habrahabr.ru/blogs/crazydev/28167/">Io Language: Синтаксис (ru)</a>
+					</li>
+					<li>
+						<a href="http://habrahabr.ru/blogs/crazydev/28041/">Io programming language (ru)</a>
+					</li>
+				</ol>
+			</p>
+			<p id="personal">
+				<b>Personal</b><br/>
+				<a href="/cv.pdf">cv</a>
+			</p>
+		</div>
+	</body>
 </html> 

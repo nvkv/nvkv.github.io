@@ -1,12 +1,13 @@
 html, body {
-    height: 100%;
-    position: relative; 	                 
+    height: 100%;	                 
     color: #000;
-    padding: 1em 5%;
-    margin: 0;
     background-image: url(/images/background.png);
     line-height: 1.5;
     font-family: 'Arial', sans-serif;
+}
+
+p {
+	font-size: 14px;
 }
 
 a { 
@@ -43,62 +44,7 @@ a:hover {
   box-shadow: 2px 2px 2px #ccc;
 }
 
-/** Profiles */
-#profiles {
-    float: left;
-    background-color: #EEEEEE;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-    width: 35%;
-}
-
-#profiles h1 {
-    font-family: 'Didact Gothic', sans-serif;
-    margin-top: -5%;
-}
-
-
-/** Content field */
-#content {
-    border: 1px solid #e6e6e6;
-    background-color: #EEEEEE;
-    width: 36%;
-    padding: 20px;
-    /* height: 400px; */
-    float: right;
-    margin-right: 15%;
-    font-family: 'Arial', sans-serif;    
-}
-
-#articles ol {
+ol {
     list-style-type: armenian;
-}
-
-#container {
-    min-height:100%; 
-}
-
-#footer {
-    font-size: 1em;
-    font-family: 'Miltonian', cursive;
-    color: #999999;
-    height:50px;
-    /* margin-top:-100px; */
-    position:relative;                      
-}
-
-.jtalkTool .CodeMirror {
-    font-family: Helvetica, sans;
-    font-size: 14px !important;
-}
-
-/** Amber */
-#jtalk {
-    height: 400px !important;
-}
-
-#class-browser {
-    position: absolute;
-    margin-top: -10px;
-    margin-left: 31%;
+    font-size: 12px;
 }
