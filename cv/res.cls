@@ -182,8 +182,8 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{res}[2000/05/19 v1.4b Resume class]
 
-%\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
-%\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+%\DeclareOption{12pt}{\renewcommand\@ptsize{1}}
+%\DeclareOption{13pt}{\renewcommand\@ptsize{2}}
 
 \PassOptionsToClass{11pt,12pt}{article}
 \LoadClassWithOptions{article}

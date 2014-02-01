@@ -1,13 +1,9 @@
-\documentclass[margin]{res} % Use the res.cls style
-
-\usepackage{helvet}
-
-\usepackage{textcomp}
-\setlength{\textwidth}{5.1in}
+\documentclass[12pt]{res} % Use the res.cls style
 
 \usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel}
+
+\renewcommand{\labelitemi}{$-$}
 
 \begin{document}
 
@@ -29,27 +25,31 @@
 
 \section{Навыки} 
 
-{\sl Основные языки:} 
-Objective-C, C\#, F\#
+{\sl Языки программирования:} 
+\begin{itemize}
+\item Objective-C/C, 4 года, промышленная разработка для iOS, Mac OS X, GNUStep
+\item Ruby, 2 года, разработка бэкэндов, REST-сервисов
+\item Javascript, 2 года 
+\item Семейство Lisp'ов (Nulana Microlisp, Scheme, Common Lisp), 2 года, промышленная разработка
+\item C\#, один год, промышленная разработка
+\item Haskell, один год, личные проекты, внутренние средства автоматизации
+\item F\#, меньше года, личные проекты
+\end{itemize}
 
-{\sl Второстепенные языки:}
-Javascript, Typescript, Haskell, Go, Ruby, PHP
+{\sl Прочее по специальности}
+\begin{itemize}
+\item Есть опыт администрирования UNIX (Linux, FreeBSD, Mac OS X, Plan 9)
+\item Опыт работы с СУБД sqlite, MySQL, PostgreSQL, Oracle
+\item Знаю git, svn, mercurial
+\item В общих чертах знаю Javascript/Typescript
+\end{itemize} 
 
-{\sl Фреймворки и технологии:}
-Ruby On Rails, .NET, jQuery, \LaTeX, REST, Cocoa, xUnit, xSpec
+{\sl Opensource проекты и активность}
+\begin{itemize}
+\item http://code.sdfgh153.ru
+\item http://github.com/semka
+\end{itemize}
 
-{\sl Операционные системы:} 
-Mac OS X, Linux, FreeBSD, Windows, Plan 9
-
-{\sl СУБД:}
-Sqlite, MySQL, PostgreSQL
-
-{\sl Системы контроля версий:} 
-git, svn, cvs, mercurial
-
-{\sl Багтракеры:}
-Redmine, Github Issues, Mantis, TFS
- 
 \section{Опыт работы}
 
 {\sl Ведущий iOS разработчик} \hfill февраль 2013 - настоящее время \\
@@ -100,15 +100,7 @@ Gipis, http://gip.is
 \end{itemize}
 
 \section{Личная информация:}
-День рождения: 25.08.1986\\
-Женат, детей нет. 
-
-\section{Всякое} 
-\begin{itemize}
-\item Пару раз в год хожу в походы
-\item Плохо играю в Го и на губной гармошке
-\item Волонтер-переводчик в http://youversion.com
-\end{itemize}
+День рождения: 25.08.1986
 
 \end{resume}
 \end{document}
