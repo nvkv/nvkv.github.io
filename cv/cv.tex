@@ -1,17 +1,16 @@
-\documentclass[margin]{res} % Use the res.cls style
+\documentclass[13pt]{res} 
 
-\usepackage{helvet}
-
-\usepackage{textcomp}
-\setlength{\textwidth}{5.1in}
-
+\usepackage{cmap}
 \usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel}
+\usepackage[T1]{fontenc}
+
+
+\renewcommand{\labelitemi}{$-$}
 
 \begin{document}
 
-\moveleft.5\hoffset\centerline{\large\bf Семён Новиков}
+\moveleft.5\hoffset\centerline{\large\bf Semyon Novikov}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 \moveleft.5\hoffset\centerline{me@sdfgh153.ru}
 \moveleft.5\hoffset\centerline{+7 (919) 499 74 17}
@@ -21,95 +20,86 @@
 
 \begin{resume}
 
-% \section{Вакансия}
-% Разработчик
+\section{Education}
+Master's degree in Computer Science at Perm National Research Polytechnic University (2003-2008)
 
-\section{Образование}
-Пермский Государственный Технический Университет, Специальность АСУ. Специалист, год окончания 2008 
+\section{Technical skills} 
 
-\section{Навыки} 
-
-{\sl Основные языки:} 
-Objective-C, C\#, F\#
-
-{\sl Второстепенные языки:}
-Javascript, Typescript, Haskell, Go, Ruby, PHP
-
-{\sl Фреймворки и технологии:}
-Ruby On Rails, .NET, jQuery, \LaTeX, REST, Cocoa, xUnit, xSpec
-
-{\sl Операционные системы:} 
-Mac OS X, Linux, FreeBSD, Windows, Plan 9
-
-{\sl СУБД:}
-Sqlite, MySQL, PostgreSQL
-
-{\sl Системы контроля версий:} 
-git, svn, cvs, mercurial
-
-{\sl Багтракеры:}
-Redmine, Github Issues, Mantis, TFS
- 
-\section{Опыт работы}
-
-{\sl Ведущий iOS разработчик} \hfill февраль 2013 - настоящее время \\
-ЗАО <<Прогноз>>, http://prognoz.ru 
-\begin{itemize} \itemsep -2pt
-\item Разрабатываю iPad приложения
+{\sl Programming languages and Software development skills} 
+\begin{itemize}
+\item Objective-C/C, 4 years, commercial software development for iOS, Mac OS X, GNUStep
+\item Ruby, 2 years, backends, RESTful services, intranet web apps
+\item Various Lisps (Nulana Microlisp, Scheme, Common Lisp), 2 years
+\item C\#, 1 year
+\item Haskell, 1 year, personal projects \& tools for code generation
+\item F\#, less than year, personal projects
 \end{itemize}
 
-{\sl iOS разработчик} \hfill сентябрь 2011 - февраль 2013 \\
-Gipis, http://gip.is 
-\begin{itemize} \itemsep -2pt
-\item Разработал iOS клиент
+{\sl Other computer-related skills}
+\begin{itemize}
+\item Administration of UNIX-like operating systems (Linux, FreeBSD, Mac OS X, Plan 9)
+\item Databases: Sqlite, MySQL, PostgreSQL, Oracle
+\item Version control software: git, svn, mercurial
+\item A bit of Javascript/Typescript
+\end{itemize} 
+
+{\sl Opensource projects and activity}
+\begin{itemize}
+\item http://code.sdfgh153.ru
+\item http://github.com/semka
 \end{itemize}
 
-{\sl iOS разработчик} \hfill май 2009 - сентябрь 2011 \\
-ООО «Ньюлана», http://nulana.com
+\section{Work Experience}
+
+{\sl Senior iOS Developer} \hfill february 2013 - now \\
+<<PROGNOZ>>, Perm, http://prognoz.ru 
 \begin{itemize} 
-\item Реализовал веб фреймворк и сайт http://nulana.com
-\item Принимал участие в разработке компилятора языка Microlisp 
-\item Разработал iOS приложения Carmindy, Game Gazing, DJ Sasha
-\item Создал и поддерживал инфраструктурные проекты Nulana (средство локализации ПО, бэкенды для Carmindy и Game Gazing, и т. п.)
-\end{itemize} 
-
-{\sl Программист} \hfill январь 2008 - май 2009 \\
-ООО «Информационные и телекоммуникационные системы»
-\begin{itemize}
-\item Разработка серверной части файлообменной сети «Херабора» (она правда так называлась)
-\item Поддержка партнерской системы
-\end{itemize} 
-
-{\sl Программист} \hfill июнь 2006 - январь 2008 \\
-ООО «УРАЛСТРОЙПРОЕКТ», http://uralstroyproject.ru
-\begin{itemize}
-\item Участвовал в разработке системы электронного документооборота
-\item Автоматизация работы в AutoCAD
-\end{itemize} 
-
-{\sl Программист} \hfill сентябрь 2004 - август 2005 \\
-Березниковский Филиал ПГТУ, http://bf.pstu.ac.ru
-\begin{itemize}
-\item Участвовал в разработке средств автоматизации составления расписаний, средств автоматизации печати дипломов.
-\end{itemize} 
-
-\section{Владение языками}
-\begin{itemize}
-\item Русский: родной
-\item Английский: средний уровень (читаю и могу объясниться)
+\item iOS applications development (BI, Data Visualization)
 \end{itemize}
 
-\section{Личная информация:}
-День рождения: 25.08.1986\\
-Женат, детей нет. 
-
-\section{Всякое} 
-\begin{itemize}
-\item Пару раз в год хожу в походы
-\item Плохо играю в Го и на губной гармошке
-\item Волонтер-переводчик в http://youversion.com
+{\sl iOS developer} \hfill september 2011 - february 2013 \\
+Gipis, Moscow, http://gip.is 
+\begin{itemize} 
+\item iOS app development
 \end{itemize}
+
+{\sl iOS developer} \hfill may 2009 - september 2011 \\
+«Nulana Ltd.», Perm, http://nulana.com
+\begin{itemize} 
+\item Developed SPresso (Web framework for Microlisp) and website http://nulana.com
+\item Participated in the development Microlisp language (standart library, few improvements in VM and compiler)
+\item Developed Bunch of iOS applications: Carmindy, Game Gazing, DJ Sasha
+\item Developed and support Nulana's intranet tools (i18n backend, data backends for Carmindy, Game Gazing, etc.)
+\end{itemize} 
+\newpage
+{\sl PHP/.NET Developer} \hfill january 2008 - may 2009 \\
+«Info-telecom Ltd.», Perm
+\begin{itemize}
+\item Developed server software for file sharing network <<Herabora>>
+\item Supporting code of partner system
+\end{itemize} 
+
+{\sl .NET Developer} \hfill июнь 2006 - январь 2008 \\
+«URALSTROYPROJECT Ltd.», Perm, http://uralstroyproject.ru
+\begin{itemize}
+\item Participated in the development of Document automation system
+\item AutoCAD automation
+\end{itemize} 
+
+{\sl Software Developer} \hfill september 2004 - august 2005 \\
+Perm National Research Polytechnic University, Computing Lab.
+\begin{itemize}
+\item Participated in the development of study schedule automation system
+\end{itemize} 
+
+\section{Languages}
+\begin{itemize}
+\item Russian: native language
+\item English: Good reading, basic writing and verbal skills
+\end{itemize}
+
+\section{Personal info}
+Birth date: 25.08.1986
 
 \end{resume}
 \end{document}
-
