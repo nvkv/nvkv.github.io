@@ -1,65 +1,20 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>Semyon Novikov</title> 
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-		<meta name="author" content="Sёmka Novikov" /> 
-		<meta name="keywords" content="Semka, Semka Novikov, Сёмка, Novikov, Шмодрильник, 
-		Schmodrilnique, sdfgh153, Semyon Novikov, Семен Новиков"/> 
-		
-		<!-- Page style -->
-		
-		<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/> 
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		
-		<!-- OpenID stuff -->
-		
-		<link rel="openid.server" href="http://www.myopenid.com/server" />
-		<link rel="openid.delegate" href="http://sdfgh153.myopenid.com/" />
-		<link rel="openid2.local_id"  href="http://sdfgh153.myopenid.com" />
-		<link rel="openid2.provider"  href="http://www.myopenid.com/server" />
-		<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sdfgh153.myopenid.com" />
-	</head>
-	
-	<body>
-		<div id="about">
-			<b>Semyon Novikov</b><br/>
-			<p style="font-family: Monaco, monospace; font-size:12px">me@sdfgh153.ru (<a href="/smime.cer">S/MIME Certificate</a>, <a href="/pgp-key.html">PGP Key</a>)</p>
-            <p style="font-family: Monaco, monospace; font-size:12px"><a href="http://en.wikipedia.org/wiki/Bitmessage">bitmessage</a>: BM-2cU2VyEnDqCUYQkQvuFoe2vMGEhD8xPiKm</p>
-			<p id="occupation">
-			</p>
-			<p id="projects">
-				<b>Projects</b><br/>
-				Open source projects <a href="http://code.sdfgh153.ru">here</a><br/>
-			</p>
-			<p id="writings">
-				<b>Writings</b>
-				<ol>
-					<li>
-						<a href="http://sdfgh153.livejournal.com/103433.html">О подсветке синтаксиса (ru)</a>
-					</li>
-					<li>
-						<a href="http://habrahabr.ru/blogs/crazydev/50873/">Io Language: Метапрограммирование (ru)</a>
-					</li>
-					<li>
-						<a href="http://habrahabr.ru/blogs/crazydev/28254/">Io Language: Объектная система (ru)</a>
-					</li>
-					<li>
-						<a href="http://habrahabr.ru/blogs/crazydev/28167/">Io Language: Синтаксис (ru)</a>
-					</li>
-					<li>
-						<a href="http://habrahabr.ru/blogs/crazydev/28041/">Io programming language (ru)</a>
-					</li>
-				</ol>
-			</p>
-			<p id="personal">
-				<b>Personal</b><br/>
-                <ol>
-				    <li><a href="/cv/cv.pdf">CV</a></li>
-				    <li><a href="/ssh-key.html">SSH public key</a></li>
-                </ol>
-                <br/>
-			</p>
-		</div>
-	</body>
-</html> 
+---
+title: 
+---
+<b>Semyon Novikov</b><br/>
+<p style="font-family: Monaco, monospace; font-size:12px">me@sdfgh153.ru (<a href="/smime.cer">S/MIME Certificate</a>, <a href="/pgp-key.html">PGP Key</a>)</p>
+<p style="font-family: Monaco, monospace; font-size:12px"><a href="http://en.wikipedia.org/wiki/Bitmessage">bitmessage</a>: BM-2cU2VyEnDqCUYQkQvuFoe2vMGEhD8xPiKm</p>
+<p id="occupation">
+</p>
+<p id="projects">
+    <b>Projects</b><br/>
+    Open source projects <a href="http://code.sdfgh153.ru">here</a><br/>
+</p>
+
+<b>Personal</b>
+$partial("templates/personal.html")$
+
+<b>Writings</b>
+$partial("templates/post-list.html")$
+
+

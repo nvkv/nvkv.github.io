@@ -1,9 +1,6 @@
-# Ignoring compiled files in examples
-examples/nodejs/**/*.js
-examples/webos/**/*.js
-
-# Ignoring compiled files in st
-st/*.js
-
-# In case amber is also saved in a local Subversion
-.svn
+_Store
+site
+site.hi
+site.o
+_cache
+_site
