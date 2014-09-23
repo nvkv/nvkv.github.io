@@ -1,0 +1,62 @@
+html, body {
+	height: 99%;
+	color: #000;
+	background-image: url(/images/g137cc0.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	line-height: 1.5;
+	font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+
+a { 
+	color: #61676f;
+	text-decoration: none;
+}
+
+
+a:hover {
+	color: #51575f;
+	border-bottom: 1px dashed #51575f;
+}
+
+
+.src {
+	/* margin-left: 25%; */
+	padding: 10px;
+	font-family: Monaco, monospace;
+	font-size: 12px;
+	line-height: 1.5em;
+	border: 2px solid #c5c5c5;
+	color: #232323;
+	max-width: 50%;
+	background-color: #ECECEC;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	width: 99%;
+}
+
+
+.shadow {
+	-moz-box-shadow: 2px 2px 2px #ccc;
+	-webkit-box-shadow: 2px 2px 2px #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+
+ol {
+	list-style-type: armenian;
+	/* font-size: 12px; */
+}
+
+
+#article {
+    font-family: Georgia;
+    font-size: 12pt;
+    text-align: justify;
+    max-width: 50%;
+}
