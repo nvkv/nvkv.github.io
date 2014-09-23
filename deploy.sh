@@ -8,3 +8,7 @@ cp -R ./_site /tmp/
 
 git checkout master
 
+rm -rf *
+
+cp -R /tmp/_site/* .
+
