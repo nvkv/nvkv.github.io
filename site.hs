@@ -15,7 +15,7 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.markdown", "contact.markdown", "pgp-key.markdown", "ssh-key.markdown"]) $ do
+    match (fromList ["about.markdown", "pgp-key.markdown", "ssh-key.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
