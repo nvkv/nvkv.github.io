@@ -22,6 +22,7 @@ fi
 # Устанавливаем переменную, для нашего коммит-сообщения...  
 COMMIT_MESSAGE=$1
 
+
 echo "Заливаем в мастер..."
 git commit -a -m "$COMMIT_MESSAGE"
 git push -f origin master
