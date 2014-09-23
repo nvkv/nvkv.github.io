@@ -5,6 +5,7 @@ runhaskell site.hs rebuild
 
 rm -rf /tmp/_site
 cp -R ./_site /tmp/
+cp ./CNAME /tmp/_site/
 
 git checkout master
 
