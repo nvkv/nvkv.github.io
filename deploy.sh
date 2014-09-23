@@ -27,8 +27,8 @@ git commit -a -m "$COMMIT_MESSAGE"
 git push -f origin master
 
 echo "Собираем новую версию сайта..."
-ghc site.hs
-./site rebuild
+#ghc site.hs
+runhaskell site.hs rebuild
 
 echo "Копируем во временное место, предварительно удалив старое, если нужно..."
 rm -rf /tmp/_site/ || true 1> /dev/null
