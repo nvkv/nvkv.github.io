@@ -13,5 +13,6 @@ rm -rf *
 
 cp -R /tmp/_site/* .
 
+git add .
 git commit -a
 git push origin master
