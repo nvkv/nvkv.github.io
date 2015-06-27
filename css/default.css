@@ -1,1 +1,113 @@
-@font-face{font-family:'texgyrepagellaregular';src:url('texgyrepagella-regular-webfont.eot');src:url('texgyrepagella-regular-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-regular-webfont.woff') format('woff'), url('texgyrepagella-regular-webfont.ttf') format('truetype'), url('texgyrepagella-regular-webfont.svg#texgyrepagellaregular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'texgyrepagellabold_italic';src:url('texgyrepagella-bolditalic-webfont.eot');src:url('texgyrepagella-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-bolditalic-webfont.woff') format('woff'), url('texgyrepagella-bolditalic-webfont.ttf') format('truetype'), url('texgyrepagella-bolditalic-webfont.svg#texgyrepagellabold_italic') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'texgyrepagellaitalic';src:url('texgyrepagella-italic-webfont.eot');src:url('texgyrepagella-italic-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-italic-webfont.woff') format('woff'), url('texgyrepagella-italic-webfont.ttf') format('truetype'), url('texgyrepagella-italic-webfont.svg#texgyrepagellaitalic') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'texgyrepagellabold';src:url('texgyrepagella-bold-webfont.eot');src:url('texgyrepagella-bold-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-bold-webfont.woff') format('woff'), url('texgyrepagella-bold-webfont.ttf') format('truetype'), url('texgyrepagella-bold-webfont.svg#texgyrepagellabold') format('svg');font-weight:normal;font-style:normal}html, body{height:99%;color:#000;background-image:url(/images/g137cc0.jpg);background-repeat:no-repeat;background-position:bottom right;line-height:1.5;font-family:'Arial', sans-serif;font-size:14px}a{color:#61676f;text-decoration:none}a:hover{color:#51575f;border-bottom:1px dashed #51575f}.src{padding:10px;font-family:Monaco, monospace;font-size:12px;line-height:1.5em;border:2px solid #c5c5c5;color:#232323;max-width:50%;background-color:#ECECEC;white-space:pre-wrap;white-space:-moz-pre-wrap !important;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;width:99%}.shadow{-moz-box-shadow:2px 2px 2px #ccc;-webkit-box-shadow:2px 2px 2px #ccc;box-shadow:2px 2px 2px #ccc}ol{list-style-type:armenian}#article{font-family:'Lora', serif;font-size:14pt;text-align:center;max-width:50%;margin-left:auto;margin-right:auto}
+@font-face {
+    font-family: 'texgyrepagellaregular';
+    src: url('texgyrepagella-regular-webfont.eot');
+    src: url('texgyrepagella-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyrepagella-regular-webfont.woff') format('woff'),
+         url('texgyrepagella-regular-webfont.ttf') format('truetype'),
+         url('texgyrepagella-regular-webfont.svg#texgyrepagellaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'texgyrepagellabold_italic';
+    src: url('texgyrepagella-bolditalic-webfont.eot');
+    src: url('texgyrepagella-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyrepagella-bolditalic-webfont.woff') format('woff'),
+         url('texgyrepagella-bolditalic-webfont.ttf') format('truetype'),
+         url('texgyrepagella-bolditalic-webfont.svg#texgyrepagellabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'texgyrepagellaitalic';
+    src: url('texgyrepagella-italic-webfont.eot');
+    src: url('texgyrepagella-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyrepagella-italic-webfont.woff') format('woff'),
+         url('texgyrepagella-italic-webfont.ttf') format('truetype'),
+         url('texgyrepagella-italic-webfont.svg#texgyrepagellaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'texgyrepagellabold';
+    src: url('texgyrepagella-bold-webfont.eot');
+    src: url('texgyrepagella-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('texgyrepagella-bold-webfont.woff') format('woff'),
+         url('texgyrepagella-bold-webfont.ttf') format('truetype'),
+         url('texgyrepagella-bold-webfont.svg#texgyrepagellabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+	height: 99%;
+	color: #000;
+	background-image: url(/images/g137cc0.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	line-height: 1.5;
+	font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+
+a { 
+	color: #61676f;
+	text-decoration: none;
+}
+
+
+a:hover {
+	color: #51575f;
+	border-bottom: 1px dashed #51575f;
+}
+
+
+.src {
+	/* margin-left: 25%; */
+	padding: 10px;
+	font-family: Monaco, monospace;
+	font-size: 12px;
+	line-height: 1.5em;
+	border: 2px solid #c5c5c5;
+	color: #232323;
+	max-width: 50%;
+	background-color: #ECECEC;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	width: 99%;
+}
+
+
+.shadow {
+	-moz-box-shadow: 2px 2px 2px #ccc;
+	-webkit-box-shadow: 2px 2px 2px #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+
+ol {
+	list-style-type: armenian;
+	/* font-size: 12px; */
+}
+
+
+#article {
+    font-family: 'Lora', serif;
+    font-size: 14pt;
+    text-align: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
