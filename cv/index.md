@@ -5,49 +5,42 @@ layout: cv
 Semyon Novikov
 ===========
 
-email: me@sdfgh153.ru     
-tel: +7 (919) 499 74 17       
-web: http://sdfgh153.ru
+**email**: <me@sdfgh153.ru>    
+**web**: <http://sdfgh153.ru>
 
 ## Work Experience
 
-### Pro IT, Perm, http://proitr.ru
-(September 2014 - Present time)    
+### Pro IT, Perm, <http://proitr.ru> (September 2014 - Present time)    
 Mobile development team leader
 
 - iOS applications development (Swift, Objective-C)
 - Web services development (Scala, Play framework)
 - Tools (Rust, Scala, Haskell, Ruby)
 
-### PROGNOZ, Perm, http://prognoz.com
-(February 2013 — September 2014)    
+### PROGNOZ, Perm, <http://prognoz.com> (February 2013 — September 2014)    
 Senior iOS Developer/Mobile development team leader
 
 - iOS applications development (Swift, Objective-C)
 - Tools (Ruby, Haskell)
 
-### Gipis, Perm/Moscow, http://gip.is
-(May 2009 — September 2011)
+### Gipis, Perm/Moscow, <http://gip.is> (May 2009 — September 2011)
 
 - Developed Gipis iOS app (Objective-C)
 
-### Nulana Ltd., Perm, http://nulana.com
-(May 2009 — September 2011)
+### Nulana Ltd., Perm, <http://nulana.com> (May 2009 — September 2011)
 
 - Developed a number of iOS applications: Carmindy, Game Gazing, DJ Sasha
 - Developed an “S-presso” web framework for Microlisp and the company’s website
 - Participated in the development of the Microlisp language (standard library, few improvements in the VM and compiler)
 - Intranet tools development and support (i18n backend, data backends for Carmindy, Game Gazing, etc.)
 
-### Info-telecom Ltd., Perm
-January 2008 — May 2009    
+### Info-telecom Ltd., Perm (January 2008 — May 2009)
 PHP/.NET Developer
 
 - Developed server software for the file sharing network called “Herabora”
 - Partner system’s code support
 
-### URALSTROYPROJECT Ltd., Perm, http://uralstroyproject.ru
-June 2006 — January 2008    
+### URALSTROYPROJECT Ltd., Perm, <http://uralstroyproject.ru> (June 2006 — January 2008)
 .NET Developer
 
 - Participated in the development of document automation system
@@ -81,7 +74,7 @@ June 2006 — January 2008
 
 ### Open source projects & activity
 
-- http://github.com/semka
+- <http://github.com/semka>
 
 # Education
 M.S., Computer Science at Perm State Technical University, 2008
