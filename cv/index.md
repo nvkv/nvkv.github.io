@@ -11,11 +11,11 @@ Semyon Novikov
 ## Work Experience
 
 ### Pro IT, Perm, <http://proitr.ru> (September 2014 - Present time)    
-Mobile development team leader
+Mobile development team leader, Scrum master
 
 - iOS applications development (Swift, Objective-C)
-- Web services development (Scala, Play framework)
-- Tools (Rust, Scala, Haskell, Ruby)
+- Web services development (Scala, Play framework, Akka)
+- Tools (Rust, Scala, Elixir, Haskell, Ruby)
 
 ### PROGNOZ, Perm, <http://prognoz.com> (February 2013 — September 2014)    
 Senior iOS Developer/Mobile development team leader
