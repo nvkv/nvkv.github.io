@@ -5,19 +5,32 @@ layout: cv
 Semyon Novikov
 ===========
 
-**email**: <me@sdfgh153.ru>    
+**email**: <me@sdfgh153.ru>
 **web**: <http://sdfgh153.ru>
 
 ## Work Experience
 
-### Pro IT, Perm, <http://proitr.ru> (September 2014 - Present time)    
+### Chatfuel, <https://chatfuel.com> (August 2016 - Present time)
+DevOps Engineering Consultant
+
+- CD/CD process design and implementation
+
+### Pro IT, Perm, <http://proitr.ru> (June 2016 - Present time)
+Lead Systems Engeneer
+
+- Infrastructure automation
+- Monitoring system design and implementation
+- CI and CD pipelines development
+- Being on call
+
+### Pro IT, Perm, <http://proitr.ru> (September 2014 - June 2016)
 Mobile development team leader, Scrum master
 
 - iOS applications development (Swift, Objective-C)
 - Web services development (Scala, Play framework, Akka)
-- Tools (Rust, Scala, Elixir, Haskell, Ruby)
+- Tools (Clojure, Scala, Haskell, Ruby)
 
-### PROGNOZ, Perm, <http://prognoz.com> (February 2013 — September 2014)    
+### PROGNOZ, Perm, <http://prognoz.com> (February 2013 — September 2014)
 Senior iOS Developer/Mobile development team leader
 
 - iOS applications development (Swift, Objective-C)
@@ -48,38 +61,42 @@ PHP/.NET Developer
 
 # Technical Skills
 
-### Programming languages and Software development skills
+### Programming languages, Software development and Operations skills
 
-- Scala, Play Framework. Less than year, RESTful web services
-- Swift, (since first public compiler beta)
-- Rust. Less than year
-- Objective-C, 6 years
-- Ruby, 2 years
-- Various Lisps (Nulana Microlisp, Scheme, Racket, Common Lisp), 2 years
-- C#, 1 year
+- Ansible
+- Docker, Vagrant
+- TeamCity, Gitlab CI, Concourse CI
+- Serverspec
+- Clojure
+- Scala (Play Framework, Akka)
+- Swift
+- Objective-C
+- Ruby
+- Various Lisps (Nulana Microlisp, Scheme, Racket, Common Lisp)
 
 ### Skills used for personal projects
 
-- Haskell, 1 year
-- Go language, less than year
-- Javascript, 2 years
-- Typescript, less than year
-- Smalltalk (Pharo, Amber), 1 year
+- Haskell
+- Go language
+- Javascript
+- Typescript
+- Smalltalk (Pharo, Amber)
 
 ### Other computer related skills
 
-- Databases: Sqlite, MySQL, PostgreSQL, Oracle, H2DB
-- Version control software: git, svn, mercurial, TFS
+- Databases: SQLite, MySQL, PostgreSQL, Oracle, H2DB, MongoDB
+- Version control software: git, svn, mercurial
 - Operating systems: Mac OS X, Microsoft Windows, Linux, OpenBSD, FreeBSD, Plan 9
 
 ### Open source projects & activity
 
-- <http://github.com/semka>
+- <https://github.com/semka>
+- <https://github.com/answr42>
 
 # Education
 M.S., Computer Science at Perm State Technical University, 2008
 
 # Languages
 
-- Russian: native language
+- Russian: native
 - English: good reading, basic writing and verbal skills
