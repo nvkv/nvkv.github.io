@@ -13,7 +13,7 @@ Semyon Novikov
 ### Chatfuel, <https://chatfuel.com> (August 2016 - Present time)
 DevOps Engineering Consultant
 
-- CD/CD process design and implementation
+- CI/CD process design and implementation
 
 ### Pro IT, Perm, <http://proitr.ru> (June 2016 - Present time)
 Lead Systems Engeneer
