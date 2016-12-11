@@ -32,7 +32,7 @@ Senior iOS Developer/Mobile development team leader
 - iOS applications development (Swift, Objective-C)
 - Tools (Ruby, Haskell)
 
-### Gipis, Perm/Moscow, <http://gip.is> (May 2009 — September 2011)
+### Gipis, Perm/Moscow, <http://gip.is> (September 2011 — January 2013)
 
 - Developed Gipis iOS app (Objective-C)
 
