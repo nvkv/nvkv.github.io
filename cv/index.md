@@ -11,7 +11,7 @@ Semyon Novikov
 ## Work Experience
 
 ### Pro IT, Perm, <http://proitr.ru> (June 2016 - Present time)
-Systems Engeneer
+Systems Engineer
 
 - Starting up DevOps process
 - Infrastructure automation
