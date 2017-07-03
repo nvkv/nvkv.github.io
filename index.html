@@ -3,28 +3,31 @@ layout: default
 ---
 
 <b>Semyon Novikov</b><br/>
-<p style="font-family: Monaco, monospace; font-size:12px">me@sdfgh153.ru (<a href="/pgp-key.html">PGP Key</a>)</p>
-<p><a href="https://keybase.io/sdfgh153">Keybase</a></p>
+<ul>
+  <li style="font-family: Monaco, monospace; font-size:12px">me@sdfgh153.ru (<a
+      href="/pgp-key.html">PGP Key</a>)</li>
+  <li><a href="https://keybase.io/sdfgh153">Keybase</a></li>
+</ul>
 <p id="occupation">
 
 </p>
 <p id="projects">
-    <b>Projects</b><br/>
-    Open source projects: <a href="http://github.com/semka">github.com/semka</a><br/>
+<b>Projects</b><br/>
+Open source projects: <a href="http://github.com/semka">github.com/semka</a><br/>
 </p>
 
 <b>Personal</b>
 <ul>
-    <li><a class="post-link" href="/ssh-key.html">SSH key</a></li>
-    <li><a class="post-link" href="/cv/">Résumé</a></li>
+  <li><a class="post-link" href="/ssh-key.html">SSH key</a></li>
+  <li><a class="post-link" href="/cv/">Résumé</a></li>
 </ul>
 
 <b>Writings</b> (<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed</a>)
 <ul class="post-list">
-    {% for post in site.posts%}
-    <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
+  {% for post in site.posts%}
+  <li>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
 </ul>
 </div>
