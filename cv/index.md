@@ -10,7 +10,10 @@ Semyon Novikov
 
 ## Work Experience
 
-### Pro IT, Perm, <http://proitr.ru> (June 2016 - Present time)
+### Independent Consultant, (April 2017 - Present time)
+Systems Engineering
+
+### Pro IT, Perm, <http://proitr.ru> (June 2016 - April 2017)
 Systems Engineer
 
 - Starting up DevOps process
@@ -41,12 +44,12 @@ Senior iOS Developer/Mobile development team leader
 - Developed a number of iOS applications: Carmindy, Game Gazing, DJ Sasha
 - Developed an “S-presso” web framework for Microlisp and the company’s website
 - Participated in the development of the Microlisp language (standard library, few improvements in the VM and compiler)
-- Intranet tools development and support (i18n backend, data backends for Carmindy, Game Gazing, etc.)
+- Internal tools development and support (i18n backend, data backends, etc.)
 
 ### Info-telecom Ltd., Perm (January 2008 — May 2009)
 PHP/.NET Developer
 
-- Developed server software for the file sharing network called “Herabora”
+- Developed backend software for the file sharing network called “Herabora”
 - Partner system’s code support
 
 ### URALSTROYPROJECT Ltd., Perm, <http://uralstroyproject.ru> (June 2006 — January 2008)
@@ -59,9 +62,14 @@ PHP/.NET Developer
 
 ### Programming languages, Software development and Operations skills
 
+- Terraform
+- Packer
+- AWS
+- Kubernetes
+- Monitoring toolchain: Graphite, Riemann, Grafana, Datadog, CloudWatch
 - Ansible
 - Docker, Vagrant
-- TeamCity, Gitlab CI, Concourse CI
+- CI/CD: TeamCity, Gitlab CI, Concourse CI, CircleCI, Jenkins
 - Serverspec
 - Clojure
 - Scala (Play Framework, Akka)
@@ -95,4 +103,4 @@ M.S., Computer Science at Perm State Technical University, 2008
 # Languages
 
 - Russian: native
-- English: good reading, basic writing and verbal skills
+- English: advanced
