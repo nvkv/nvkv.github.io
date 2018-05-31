@@ -94,7 +94,7 @@ PHP/.NET Developer
 
 ### Open source projects & activity
 
-- <https://github.com/semka>
+- <https://github.com/nvkv>
 - <https://github.com/answr42>
 
 # Education
