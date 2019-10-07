@@ -1,98 +1,136 @@
 ---
 layout: cv
+documentclass: article
+fontsize: 12pt
+fontfamily: charter
+pagestyle: empty
+colorlinks: linkcolor
 ---
 
 Semyon Novikov
 ===========
 
-**email**: <me@sdfgh153.ru>
-**web**: <http://sdfgh153.ru>
+**email**: <nsa@bedlam.io>
 
-## Work Experience
+**web**: <https://sdfgh153.ru>
 
-### Independent Consultant, (April 2017 - Present time)
-Systems Engineering
+**phone**: +7 919 499-74-17
 
-### Pro IT, Perm, <http://proitr.ru> (June 2016 - April 2017)
-Systems Engineer
+# Work Experience
 
-- Starting up DevOps process
+### Hippo Technologies
+<https://hellohippo.com> (April 2017 - Present time)
+
+Systems Engineer, SRE
+
+- Core HIPAA compliant infrastructure design and implementation
+- Building and evolving self-service platform for developers
+  - CI/CD
+  - Monitoring
+  - Tooling and automation
+  - Documentation
+- Being on call
+
+### Pro IT
+<http://proitr.ru>
+
+Systems Engineer (June 2016 - April 2017)
+
+- Starting up the DevOps process
 - Infrastructure automation
 - Monitoring system design and implementation
 - CI and CD pipelines development
 - Being on call
 
-### Pro IT, Perm, <http://proitr.ru> (September 2014 - June 2016)
-Mobile development team leader, Scrum master
+Mobile development team leader, Scrum master (September 2014 - June 2016)
 
-- iOS applications development (Swift, Objective-C)
-- Web services development (Scala, Play framework, Akka)
-- Tools (Clojure, Scala, Haskell, Ruby)
+- iOS applications development
+- Web services development
+- Automation and tools development
 
-### PROGNOZ, Perm, <http://prognoz.com> (February 2013 — September 2014)
-Senior iOS Developer/Mobile development team leader
+### Prognoz
+<http://prognoz.com> (February 2013 — September 2014)
 
-- iOS applications development (Swift, Objective-C)
-- Tools (Ruby, Haskell)
+Senior iOS Developer, Mobile development team leader
 
-### Gipis, Perm/Moscow, <http://gip.is> (September 2011 — January 2013)
+- iOS applications development
+- Automation and tools development
 
-- Developed Gipis iOS app (Objective-C)
+### Gipis
+(September 2011 — January 2013)
 
-### Nulana Ltd., Perm, <http://nulana.com> (May 2009 — September 2011)
+iOS Developer
 
-- Developed a number of iOS applications: Carmindy, Game Gazing, DJ Sasha
-- Developed an “S-presso” web framework for Microlisp and the company’s website
-- Participated in the development of the Microlisp language (standard library, few improvements in the VM and compiler)
-- Internal tools development and support (i18n backend, data backends, etc.)
+- iOS Application development
 
-### Info-telecom Ltd., Perm (January 2008 — May 2009)
+### Nulana Ltd.
+<http://nulana.com> (May 2009 — September 2011)
+
+iOS Developer
+
+- iOS Applications development
+- Internal tools and automation development
+- We wrote home brew lisp here!
+
+### Info-telecom Ltd.
+(January 2008 — May 2009)
+
 PHP/.NET Developer
 
-- Developed backend software for the file sharing network called “Herabora”
+- Development of P2P file-sharing system backend
 - Partner system’s code support
 
-### URALSTROYPROJECT Ltd., Perm, <http://uralstroyproject.ru> (June 2006 — January 2008)
+### URALSTROYPROJECT Ltd.
+<http://uralstroyproject.ru> (June 2006 — January 2008)
+
 .NET Developer
 
-- Participated in the development of document automation system
-- Developed a number of AutoCAD automation solutions in AutoLISP
+- Document automation system development
 
 # Technical Skills
 
-### Programming languages, Software development and Operations skills
+## Ops
 
-- Terraform
-- Packer
 - AWS
+- Infrastructure as Code
+  - Terraform
+  - Packer
+  - Ansible
+- Docker
 - Kubernetes
-- Monitoring toolchain: Graphite, Riemann, Grafana, Datadog, CloudWatch
-- Ansible
-- Docker, Vagrant
-- CI/CD: TeamCity, Gitlab CI, Concourse CI, CircleCI, Jenkins
-- Serverspec
+- Monitoring systems
+  - Riemann
+  - Datadog
+  - CloudWatch
+  - Prometheus
+  - Graphite
+- CI/CD
+  - CircleCI
+  - GitlabCI
+  - TeamCity
+  - Jenkins
+- Fastlane
+- Bash, Python, you name it
+
+## Dev
+
+### Real-life code running in production
+
 - Clojure
-- Scala (Play Framework, Akka)
-- Swift
-- Objective-C
+- Go
+- Swift and Objective-C
 - Ruby
-- Various Lisps (Nulana Microlisp, Scheme, Racket, Common Lisp)
+- Various Lisps
 
-### Skills used for personal projects
+### Not much in production
 
+- Rust
+- Scala
+- Javascript, Typescript, ClojureScript
 - Haskell
-- Go language
-- Javascript
-- Typescript
 - Smalltalk (Pharo, Amber)
 
-### Other computer related skills
-
-- Databases: SQLite, MySQL, PostgreSQL, Oracle, H2DB, MongoDB
-- Version control software: git, svn, mercurial
-- Operating systems: Mac OS X, Microsoft Windows, Linux, OpenBSD, FreeBSD, Plan 9
-
-### Open source projects & activity
+# Github
 
 - <https://github.com/nvkv>
 - <https://github.com/answr42>
@@ -102,5 +140,5 @@ M.S., Computer Science at Perm State Technical University, 2008
 
 # Languages
 
-- Russian: native
 - English: advanced
+- Russian: native
