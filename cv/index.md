@@ -2,7 +2,7 @@
 layout: cv
 documentclass: article
 fontsize: 12pt
-fontfamily: charter
+fontfamily: Go
 pagestyle: empty
 colorlinks: linkcolor
 ---
