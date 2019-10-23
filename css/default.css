@@ -47,6 +47,42 @@
 
 }
 
+@font-face {
+	font-family: 'Go';
+	src: url('fonts/Go-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Go';
+	src: url('fonts/Go-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Go';
+	src: url('fonts/GoMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Go';
+	src: url('fonts/GoRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Go Mono';
+	src: url('fonts/GoMono.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 html, body {
 	height: 99%;
 	color: #000;
@@ -54,7 +90,7 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	line-height: 1.5;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Go', sans-serif;
     font-size: 14px;
 }
 
@@ -73,7 +109,7 @@ a:hover {
 
 .src {
 	padding: 10px;
-	font-family: Monaco, monospace;
+	font-family: Go Mono, Monaco, monospace;
 	font-size: 12px;
 	line-height: 1.5em;
 	border: 2px solid #c5c5c5;
@@ -102,7 +138,7 @@ ol {
 
 
 #article {
-    font-family: 'Georgia', serif;
+    font-family: 'Go', serif;
     font-size: 14pt;
     text-align: center;
     max-width: 50%;
