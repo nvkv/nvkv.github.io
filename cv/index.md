@@ -18,8 +18,8 @@ Semyon Novikov
 
 # Work Experience
 
-### Hippo Technologies
-<https://hellohippo.com> (April 2017 - Present time)
+### Independent contractor
+(April 2017 - Present time)
 
 Systems Engineer, SRE
 
