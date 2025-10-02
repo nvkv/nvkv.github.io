@@ -133,7 +133,6 @@ PHP/.NET Developer
 # Github
 
 - <https://github.com/nvkv>
-- <https://github.com/answr42>
 
 # Education
 M.S., Computer Science at Perm State Technical University, 2008
